@@ -224,7 +224,7 @@ header nav .container .buttons a:hover::after {
   height: auto;
   position: relative;
   padding: 48px 0;
-  background: #0a0117;
+  background: #fff;
   background-image: url("../images/shape-bg-6.svg");
   background-position: center center;
   background-size: cover;
@@ -257,7 +257,7 @@ header nav .container .buttons a:hover::after {
   line-height: 1.6;
   margin: 0 0 32px;
   font-size: 48px;
-  color: #fff;
+  color: #161616;
 }
 @media (max-width: 576px) {
   .hero-section .row .text-container h1 {
@@ -272,7 +272,7 @@ header nav .container .buttons a:hover::after {
 }
 .hero-section .row .text-container p {
   font-size: 14px;
-  color: #fff;
+  color: #161616;
   margin-bottom: 36px;
 }
 @media (max-width: 576px) {
@@ -313,7 +313,7 @@ header nav .container .buttons a:hover::after {
   background: none;
   outline: none;
   border-radius: 50%;
-  background: #fff;
+  background: #161616;
   color: #f7941d;
   transition: 0.3s ease-in-out;
 }

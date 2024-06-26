@@ -236,7 +236,7 @@ header {
   height: auto;
   position: relative;
   padding: 48px 0;
-  background: #0a0117;
+  background: #fff;
   background-image: url("../images/shape-bg-6.svg");
   background-position: center center;
   background-size: cover;
@@ -265,7 +265,7 @@ header {
         line-height: 1.6;
         margin: 0 0 32px;
         font-size: 48px;
-        color: $white;
+        color: $black;
         @media (max-width: 576px) {
           font-size: 32px;
           margin: 16px 0;
@@ -278,7 +278,7 @@ header {
       }
       p {
         font-size: 14px;
-        color: $white;
+        color: $black;
         margin-bottom: 36px;
         @media (max-width: 576px) {
           font-size: 14px;
@@ -312,7 +312,7 @@ header {
           width: 50px;
           @include clearInput();
           border-radius: 50%;
-          background: $white;
+          background: $black;
           color: $main;
           transition: .3s ease-in-out;
           &:hover {
