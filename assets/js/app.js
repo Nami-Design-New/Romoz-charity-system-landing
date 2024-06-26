@@ -11,9 +11,12 @@ let swiper = new Swiper(".partenersSwiper", {
   spaceBetween: 50,
   grabCursor: true,
   loop: true,
-  autoplay: true,
   autoplayTimeout: 5000,
   speed: 1000,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
   breakpoints: {
     992: {
       slidesPerView: 5
@@ -85,7 +88,7 @@ overlay.addEventListener("click", () => {
   document.querySelector(".nav-links").classList.remove("active");
   overlay.classList.remove("active");
   toggler.querySelector("i").classList = "fa-sharp fa-solid fa-bars";
-})
+});
 let links = document.querySelectorAll(".nav-link");
 links.forEach((l) => {
   l.addEventListener("click", () => {
