@@ -113,23 +113,28 @@ header {
       .nav-links {
         height: 80px;
         display: flex;
+        padding: 0;
         gap: 32px;
         @media (max-width: 768px) {
           display: flex;
           flex-direction: column;
           background: white;
-          width: 100%;
+          width: 50%;
+          height: calc(100vh - 100px);
           top: 100px;
-          left: 0;
-          height: 0;
+          right: -50%;
           overflow: hidden;
-          justify-content: center;
+          justify-content: start;
           position: absolute;
-          z-index: 9999999;
-          gap: 24px;
+          z-index: 99999;
+          gap: 0;
           transition: .5s ease-in-out;
           &.active {
-            height: calc(100vh - 100px);
+            right: 0;
+          }
+          li {
+            padding: 0 16px;
+            justify-content: flex-start !important;
           }
         }
         li {
@@ -138,7 +143,7 @@ header {
           justify-content: center;
           height: 100%;
           @media (max-width: 768px) {
-            height: 70px;
+            height: 60px;
           }
           .nav-link {
             color: #000;
@@ -229,6 +234,20 @@ header {
         }
       }
     }
+  }
+}
+.overlay {
+  z-index: 9;
+  position: fixed;
+  height: calc(100vh - 100px);
+  background: #00000080;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  &.active {
+    opacity: 1;
   }
 }
 .hero-section {
@@ -638,7 +657,7 @@ header {
 }
 .packages {
   margin: 0 0 48px;
-  padding: 42px 0;
+  padding: 64px 0;
   overflow-x: hidden;
   position: relative;
   svg {
@@ -651,7 +670,7 @@ header {
     text-align: center;
     color: #000;
     font-weight: 500;
-    margin-bottom: 48px;
+    margin-bottom: 54px;
     @media screen and (max-width: 768px) {
       padding: 0 12px;
       margin-bottom: 12px;
@@ -668,24 +687,62 @@ header {
   }
   .package-card {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: #fff;
-    border-radius: 8px;
-    padding: 32px 24px;
-    height: 360px;
+    border-radius: 16px;
+    height: 100%;
+    z-index: 1;
     position: relative;
+    .package_container {
+      gap: 16px;
+      height: 100%;
+      padding: 24px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &.second {
+      transform: scale(1.2);
+      z-index: 2;
+      .package_container {
+        transform: scale(.8);
+        padding: 0;
+      }
+      @media screen and (max-width: 768px) {
+        transform: scale(1);
+        .package_container {
+          padding: 24px;
+          transform: scale(1);
+        }
+      }
+    }
     &.p2::after {
-      content: '\f005';
-      font-family: "Font Awesome 6 Pro";
+      content: "";
+      background-image: url(../images/featured.svg);
+      width: 42px;
+      background-size: contain;
       border-radius: 50%;
+      height: 42px;
       position: absolute;
-      left: 16px;
+      left: 24px;
       top: 24px;
       font-size: 20px;
       color: #f7941d;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      li {
+        color: $black;
+        font-size: 14px;
+        i {
+          color: $main;
+        }
+      }
     }
     .title {
       display: flex;
@@ -708,7 +765,6 @@ header {
     p {
       font-size: 12px;
       line-height: 22px;
-      text-align: center;
       margin: 0;
     }
     a {
@@ -722,7 +778,7 @@ header {
       transition: .3s ease-in-out;
       position: relative;
       font-weight: 500;
-      border-radius: 4px;
+      border-radius: 8px;
       padding: 8px 0;
       align-self: flex-start;
       span {

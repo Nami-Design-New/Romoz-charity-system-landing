@@ -69,19 +69,29 @@ window.onscroll = function () {
 
 //nav toggler
 let toggler = document.querySelector("#toggle");
+let overlay = document.querySelector(".overlay");
 toggler.addEventListener("click", () => {
   document.querySelector(".nav-links").classList.toggle("active");
   if (document.querySelector(".nav-links").classList.contains("active")) {
     toggler.querySelector("i").classList =
       "fa-sharp fa-solid fa-bars-staggered";
+    overlay.classList.add("active");
   } else {
     toggler.querySelector("i").classList = "fa-sharp fa-solid fa-bars";
+    overlay.classList.remove("active");
   }
 });
+overlay.addEventListener("click", () => {
+  document.querySelector(".nav-links").classList.remove("active");
+  overlay.classList.remove("active");
+  toggler.querySelector("i").classList = "fa-sharp fa-solid fa-bars";
+})
 let links = document.querySelectorAll(".nav-link");
 links.forEach((l) => {
   l.addEventListener("click", () => {
     document.querySelector(".nav-links").classList.remove("active");
+    overlay.classList.remove("active");
+    toggler.querySelector("i").classList = "fa-sharp fa-solid fa-bars";
   });
 });
 
