@@ -1,11 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: IBMRegular;
+  font-display: swap;
+  src: url(../webfonts/IBMPlexSansArabic-Regular.ttf);
+}
+@font-face {
+  font-family: IBMBold;
+  font-display: swap;
+  src: url(../webfonts/IBMPlexSansArabic-Bold.ttf);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   line-height: 32px;
   scroll-behavior: smooth;
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: "IBMRegular", sans-serif;
   direction: rtl;
   -webkit-tap-highlight-color: transparent;
 }
@@ -232,10 +241,12 @@ header nav .container .buttons a:hover::after {
   width: 100%;
   top: 100px;
   left: 0;
+  display: none;
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
 .overlay.active {
+  display: block;
   opacity: 1;
 }
 
@@ -275,13 +286,15 @@ header nav .container .buttons a:hover::after {
 .hero-section .row .text-container h1 {
   font-weight: 600;
   line-height: 1.6;
+  font-family: "IBMBold", sans-serif;
   margin: 0 0 32px;
-  font-size: 48px;
+  font-size: 60px;
+  font-weight: bold;
   color: #161616;
 }
 @media (max-width: 576px) {
   .hero-section .row .text-container h1 {
-    font-size: 32px;
+    font-size: 36px;
     margin: 16px 0;
     line-height: 1.4;
   }
