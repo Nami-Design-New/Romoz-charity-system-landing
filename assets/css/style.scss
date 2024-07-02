@@ -14,7 +14,7 @@
   box-sizing: border-box;
   line-height: 32px;
   scroll-behavior: smooth;
-  font-family: 'IBMRegular', sans-serif;
+  font-family: "IBMRegular", sans-serif;
   direction: rtl;
   -webkit-tap-highlight-color: transparent;
 }
@@ -108,7 +108,7 @@ header {
   width: 100%;
   background: #fff;
   z-index: 999;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   &.scrolled {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
@@ -138,7 +138,7 @@ header {
           position: absolute;
           z-index: 99999;
           gap: 0;
-          transition: .5s ease-in-out;
+          transition: 0.5s ease-in-out;
           &.active {
             right: 0;
           }
@@ -160,7 +160,7 @@ header {
             font-size: 14px;
             font-weight: 600;
             position: relative;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             &:hover {
               color: $main;
               &::after {
@@ -174,7 +174,7 @@ header {
               }
             }
             &::after {
-              content: '';
+              content: "";
               position: absolute;
               transform: translateX(-50%);
               left: 50%;
@@ -182,7 +182,7 @@ header {
               background-color: $main;
               width: 0;
               height: 2px;
-              transition: all .3s ease-in-out;
+              transition: all 0.3s ease-in-out;
             }
           }
         }
@@ -199,7 +199,7 @@ header {
           border: 1px solid $main;
           color: $main;
           font-size: 16px;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
           position: relative;
           font-weight: 500;
           border-radius: 4px;
@@ -221,7 +221,7 @@ header {
             line-height: 30px;
           }
           &::after {
-            content: '';
+            content: "";
             background-color: $main;
             width: 0;
             border-radius: 50%;
@@ -229,7 +229,7 @@ header {
             position: absolute;
             top: 0;
             left: 50%;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
             border-radius: 4px;
             z-index: -1;
             transform: translateX(-50%);
@@ -256,7 +256,7 @@ header {
   left: 0;
   display: none;
   opacity: 0;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   &.active {
     display: block;
     opacity: 1;
@@ -328,7 +328,7 @@ header {
           padding: 0 26px;
           height: 48px;
           font-size: 15px;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
           position: relative;
           font-weight: 500;
           border-radius: 8px;
@@ -347,7 +347,7 @@ header {
           border-radius: 50%;
           background: $black;
           color: $main;
-          transition: .3s ease-in-out;
+          transition: 0.3s ease-in-out;
           &:hover {
             background: $main;
             color: $white;
@@ -403,7 +403,7 @@ header {
         position: absolute;
         top: 0;
         right: 0;
-        content: '';
+        content: "";
         z-index: -1;
       }
     }
@@ -468,7 +468,7 @@ header {
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: 100%;
-      opacity: .1;
+      opacity: 0.1;
       z-index: -1;
     }
     .col-6 {
@@ -516,7 +516,7 @@ header {
         border-radius: 12px;
         display: flex;
         flex-direction: column;
-        transition: .4s ease-in-out;
+        transition: 0.4s ease-in-out;
         padding: 36px;
         gap: 4px;
         z-index: 99;
@@ -559,7 +559,7 @@ header {
     .faqs-content {
       .accordion .accordion-item:nth-child(n + 5) {
         display: block !important;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
       .accordion .accordion-item:last-child {
         border: 0 !important;
@@ -579,7 +579,7 @@ header {
     }
     .accordion .accordion-item:nth-child(n + 5) {
       display: none;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
     .accordion.show .accordion-item:nth-child(n + 5) {
       display: block;
@@ -720,7 +720,7 @@ header {
       transform: scale(1.2);
       z-index: 2;
       .package_container {
-        transform: scale(.8);
+        transform: scale(0.8);
         padding: 0;
       }
       @media screen and (max-width: 768px) {
@@ -789,7 +789,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
       position: relative;
       font-weight: 500;
       border-radius: 8px;
@@ -853,24 +853,24 @@ header {
     flex-direction: column;
     position: relative;
     &::after {
-      content: '';
+      content: "";
       width: 0;
       position: absolute;
       top: -2px;
       height: 2px;
       left: 0;
       background: $main;
-      transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
     &::before {
-      content: '';
+      content: "";
       width: 0;
       position: absolute;
       bottom: -2px;
       height: 2px;
       right: 0;
       background: $main;
-      transition: all .4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
     &:hover {
       border-radius: 0;
@@ -933,7 +933,7 @@ header {
     justify-content: space-between;
     flex-direction: column;
     border: 2px solid transparent;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     gap: 18px;
     padding: 24px;
     i {
@@ -1003,7 +1003,7 @@ header {
         border-radius: 8px;
         border: solid 1px #ccc;
         direction: rtl !important;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
       textarea {
         width: 100%;
@@ -1013,7 +1013,7 @@ header {
         outline: none;
         border-radius: 8px;
         border: solid 1px #ccc;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
       input,
       textarea {
@@ -1215,6 +1215,97 @@ footer {
     &.up {
       &::after {
         transform: translateY(-100%);
+      }
+    }
+  }
+}
+
+.systemcomponent {
+  padding: 60px 0;
+  background-color: #f7941d30;
+  .title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f7941d, #ff8c00, #ff4500, #ff6347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .nav-tabs {
+    border: none;
+    background-color: $white;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    gap: 4px;
+    text-align: center;
+    .nav-link {
+      display: inline-flex;
+      color: #000;
+      border-radius: 16px;
+      border: none;
+      flex: 1;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      &.active {
+        background: $main;
+        color: $white;
+      }
+    }
+  }
+  .tab-content {
+    padding: 16px 0;
+  }
+  .componentContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .componentImg {
+      width: 100%;
+      aspect-ratio: 3/1;
+      object-fit: cover;
+      max-height: 300px;
+      border-radius: 16px;
+    }
+    .componentText {
+      color: #000;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      .listItem {
+        flex: 1;
+        min-width: 300px;
+        background: #f7941d30;
+        padding: 16px;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out all;
+        .num {
+          font-size: 40px;
+          font-weight: bold;
+          font-family: fantasy;
+          color: #f7951d9f;
+          transition: 0.3s ease-in-out all;
+        }
+        .text {
+          transition: 0.3s ease-in-out all;
+        }
+
+        &:hover {
+          background: $main;
+          transform: translateY(-4px);
+          .num {
+            color: $white;
+          }
+          .text {
+            color: $white;
+          }
+        }
       }
     }
   }

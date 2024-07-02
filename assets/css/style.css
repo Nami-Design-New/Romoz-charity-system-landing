@@ -1225,4 +1225,95 @@ footer .copy p a img {
 }
 .lazyDiv.loaded.up::after {
   transform: translateY(-100%);
+}
+
+.systemcomponent {
+  padding: 60px 0;
+  background-color: rgba(247, 148, 29, 0.1882352941);
+}
+.systemcomponent .title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f7941d, #ff8c00, #ff4500, #ff6347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.systemcomponent .nav-tabs {
+  border: none;
+  background-color: #fff;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  gap: 4px;
+  text-align: center;
+}
+.systemcomponent .nav-tabs .nav-link {
+  display: inline-flex;
+  color: #000;
+  border-radius: 16px;
+  border: none;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.systemcomponent .nav-tabs .nav-link.active {
+  background: #f7941d;
+  color: #fff;
+}
+.systemcomponent .tab-content {
+  padding: 16px 0;
+}
+.systemcomponent .componentContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.systemcomponent .componentContent .componentImg {
+  width: 100%;
+  aspect-ratio: 3/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+  border-radius: 16px;
+}
+.systemcomponent .componentContent .componentText {
+  color: #000;
+}
+.systemcomponent .componentContent .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.systemcomponent .componentContent .list .listItem {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(247, 148, 29, 0.1882352941);
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out all;
+}
+.systemcomponent .componentContent .list .listItem .num {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: fantasy;
+  color: rgba(247, 149, 29, 0.6235294118);
+  transition: 0.3s ease-in-out all;
+}
+.systemcomponent .componentContent .list .listItem .text {
+  transition: 0.3s ease-in-out all;
+}
+.systemcomponent .componentContent .list .listItem:hover {
+  background: #f7941d;
+  transform: translateY(-4px);
+}
+.systemcomponent .componentContent .list .listItem:hover .num {
+  color: #fff;
+}
+.systemcomponent .componentContent .list .listItem:hover .text {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
