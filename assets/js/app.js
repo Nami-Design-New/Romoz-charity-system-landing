@@ -31,7 +31,7 @@ let swiper = new Swiper(".partenersSwiper", {
 });
 
 // nav-links-highlight
-let navLinks = document.querySelectorAll(".nav-link");
+let navLinks = document.querySelectorAll("header .nav-link");
 let sections = document.querySelectorAll(".sec");
 let current;
 window.addEventListener("scroll", () => {

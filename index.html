@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romoz Charitable System Landing page</title>
-
     <link rel="shortcut icon" href="assets/images/fav.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -26,6 +25,9 @@
                     </li>
                     <li>
                         <a href="index.html#about" class="nav-link about">نبذة عن نظام رموز</a>
+                    </li>
+                    <li>
+                        <a href="index.html#component" class="nav-link component"> مكونات النظام </a>
                     </li>
                     <li>
                         <a href="index.html#packages" class="nav-link packages m-0">إشترك الأن</a>
@@ -94,8 +96,15 @@
         <!-- about system -->
         <section class="about-system sec" id="about">
             <div class="container">
-                <div class="row m-0">
-                    <div class="col-lg-6 col-12 p-2">
+                <div class="row align-items-center m-0">
+                    <div class="col-lg-6 col-12 p-3">
+                        <div class="lazyImg" data-aos="fade-up">
+                            <div class="lazyDiv up">
+                                <img class="lazy parallax" src="assets/images/code.png" loading="lazy" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 p-3">
                         <div class="content">
                             <h2 data-aos="fade-up">
                                 ماذا يقدم لكم نظام رموز؟
@@ -139,14 +148,27 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12 p-2">
-                        <div class="lazyImg" data-aos="fade-up">
-                            <div class="lazyDiv up">
-                                <img class="lazy parallax" src="assets/images/code.png" loading="lazy" alt="">
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
+        </section>
+        <!-- system component -->
+        <section class="systemcomponent" id="component">
+            <div class="container">
+                <h2 class="text-center mb-5">منتجات نظام رموز</h2>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                      <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                  </div>
             </div>
         </section>
         <!-- System Tour -->
