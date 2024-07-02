@@ -1240,6 +1240,7 @@ footer {
     border-radius: 16px;
     gap: 4px;
     text-align: center;
+    padding: 4px;
     .nav-link {
       display: inline-flex;
       color: #000;
@@ -1251,6 +1252,12 @@ footer {
       align-items: center;
       gap: 4px;
       white-space: nowrap;
+      background-color: #f1f1f1;
+
+      @media screen and (max-width: 768px) {
+        flex: 40%;
+
+      }
       &.active {
         background: $main;
         color: $white;

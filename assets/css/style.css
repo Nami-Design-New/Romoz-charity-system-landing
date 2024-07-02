@@ -1248,6 +1248,7 @@ footer .copy p a img {
   border-radius: 16px;
   gap: 4px;
   text-align: center;
+  padding: 4px;
 }
 .systemcomponent .nav-tabs .nav-link {
   display: inline-flex;
@@ -1260,6 +1261,12 @@ footer .copy p a img {
   align-items: center;
   gap: 4px;
   white-space: nowrap;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 768px) {
+  .systemcomponent .nav-tabs .nav-link {
+    flex: 40%;
+  }
 }
 .systemcomponent .nav-tabs .nav-link.active {
   background: #f7941d;
